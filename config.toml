@@ -1,0 +1,20 @@
+baseurl = "https://dl.dropboxusercontent.com/u/5529/test-site/"
+languageCode = "en-US"
+title = "My New Site"
+theme = "twentyfourteen"
+disqusShortname = "foobar"
+
+[author]
+	primary = "Dan Hersam"
+
+[params]
+    Description = "An example web site built with Hugo"
+    FooBar = "testing 1 2 3"
+
+[taxonomies]
+    category = "categories"
+    tag = "tags"
+
+[permalinks]
+    post = "/:year/:slug"
+
