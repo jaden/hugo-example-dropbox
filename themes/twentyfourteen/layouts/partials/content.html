@@ -3,7 +3,7 @@
 	<!-- .entry-header -->
 	<header class="entry-header">
 
-	{{ $baseurl := .Site.BaseUrl }}
+	{{ $baseurl := .Site.BaseURL }}
 
 		<div class="entry-meta">
 			<span class="cat-links">
@@ -26,13 +26,13 @@
 		</div><!-- .entry-meta -->
 
 	</header>
-	
+
 	<div class="entry-content">
 		{{ .Content }}
 	</div><!-- .entry-content -->
 
 	<footer class="entry-meta">
-		<span class="tag-links">		
+		<span class="tag-links">
 			{{ range .Params.tags }}
                 <a href="{{ $baseurl}}/tags/{{ lower . | urlize }}/index.html" rel="tag">{{ . }}</a>
             {{ end }}

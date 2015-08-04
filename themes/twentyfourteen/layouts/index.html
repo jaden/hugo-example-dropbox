@@ -8,7 +8,7 @@
 			{{ range first 10 (where .Data.Pages "Section" "post") }}
 				{{ partial "content.html" . }}
 			{{ end }}
-		
+
 		</div><!-- #content -->
 	</div><!-- #primary -->
 	{{ partial "sidebar.html" . }}
